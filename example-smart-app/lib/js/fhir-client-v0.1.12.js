@@ -17386,7 +17386,7 @@ BBClient.authorize = function(params, errback){
     params.fake_token_response.patient = urlParam("patientId");
   }
 
-  providers(params.server, params.provider, function(provider){
+  providers(params.client, params.provider, function(provider){
 
     params.provider = provider;
 
